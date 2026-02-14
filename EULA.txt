@@ -1,0 +1,70 @@
+END USER LICENSE AGREEMENT (EULA)
+
+Last Updated: February 13, 2026
+
+IMPORTANT: BY INSTALLING, COPYING, ACCESSING, OR USING THIS SOFTWARE, YOU AGREE TO BE BOUND BY THIS EULA.
+IF YOU DO NOT AGREE, DO NOT INSTALL OR USE THE SOFTWARE.
+
+1. DEFINITIONS
+"Software" means LLM-in-a-Box, including its code, scripts, configuration files, documentation, and related materials provided by Licensor.
+"Licensor" means the owner/provider of this Software.
+"You" means the individual or legal entity using the Software.
+
+2. LICENSE GRANT
+Subject to this EULA, Licensor grants You a limited, non-exclusive, non-transferable, revocable license to install and use the Software for personal or internal business use.
+
+3. OWNERSHIP
+The Software is licensed, not sold. Licensor and its licensors retain all right, title, and interest in and to the Software, including all intellectual property rights.
+
+4. RESTRICTIONS
+You may not:
+(a) copy, modify, or create derivative works of the Software except as permitted by applicable law;
+(b) reverse engineer, decompile, or disassemble the Software, except where prohibited by law;
+(c) rent, lease, sublicense, distribute, or transfer the Software to third parties;
+(d) use the Software to violate any law, regulation, or third-party rights;
+(e) remove or alter any proprietary notices.
+
+5. THIRD-PARTY COMPONENTS
+The Software may include third-party components governed by separate open-source or third-party licenses. Those licenses apply to their respective components and remain in effect.
+
+6. AI OUTPUT DISCLAIMER
+The Software may generate content or recommendations using AI models. AI-generated output may be inaccurate, incomplete, or inappropriate and may not reflect facts.
+You are solely responsible for reviewing, validating, and deciding how to use any output.
+The Software is not intended to provide legal, medical, financial, or other professional advice.
+
+7. DATA AND PRIVACY
+Unless otherwise stated, the Software is designed for local/offline use. You are responsible for securing your system, files, prompts, and generated output.
+Licensor is not responsible for loss, corruption, disclosure, or unauthorized access to data caused by Your environment, misuse, or third-party tools.
+
+8. NO WARRANTY
+TO THE MAXIMUM EXTENT PERMITTED BY LAW, THE SOFTWARE IS PROVIDED "AS IS" AND "AS AVAILABLE," WITHOUT WARRANTIES OF ANY KIND, EXPRESS OR IMPLIED,
+INCLUDING MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, TITLE, AND NON-INFRINGEMENT.
+LICENSOR DOES NOT WARRANT THAT THE SOFTWARE WILL BE UNINTERRUPTED, ERROR-FREE, OR SECURE.
+
+9. LIMITATION OF LIABILITY
+TO THE MAXIMUM EXTENT PERMITTED BY LAW, LICENSOR SHALL NOT BE LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, OR PUNITIVE DAMAGES,
+OR FOR LOSS OF PROFITS, DATA, GOODWILL, OR BUSINESS INTERRUPTION, ARISING OUT OF OR RELATED TO THE SOFTWARE OR THIS EULA,
+EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.
+TO THE MAXIMUM EXTENT PERMITTED BY LAW, LICENSOR'S TOTAL LIABILITY SHALL NOT EXCEED THE AMOUNT YOU PAID FOR THE SOFTWARE (IF ANY).
+
+10. INDEMNIFICATION
+You agree to defend, indemnify, and hold harmless Licensor from and against any claims, liabilities, damages, losses, and expenses (including reasonable attorneys' fees)
+arising from Your use of the Software, Your violation of this EULA, or Your violation of any applicable law or third-party rights.
+
+11. TERMINATION
+This EULA is effective until terminated. It terminates automatically if You fail to comply with any term.
+Upon termination, You must stop using and delete all copies of the Software in Your possession or control.
+Sections intended to survive termination shall survive.
+
+12. EXPORT AND COMPLIANCE
+You agree to comply with all applicable laws and regulations, including export control and sanctions laws, in connection with use of the Software.
+
+13. GOVERNING LAW
+This EULA is governed by the laws of the jurisdiction where Licensor is established, without regard to conflict-of-law rules,
+unless otherwise required by applicable law.
+
+14. ENTIRE AGREEMENT
+This EULA is the entire agreement between You and Licensor regarding the Software and supersedes prior or contemporaneous understandings related to the Software.
+
+15. CONTACT
+For questions about this EULA, contact the Licensor or project maintainer.

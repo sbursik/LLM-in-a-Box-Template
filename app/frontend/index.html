@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LLM in a Box</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="theme-dark">
+    <div class="app-shell">
+      <header class="top-bar">
+        <div class="brand">
+          <span class="brand-mark">▣</span>
+          <div>
+            <h1>LLM in a Box</h1>
+            <p>Offline model manager</p>
+          </div>
+        </div>
+        <div class="top-actions">
+          <button id="optionsBtn" class="ghost">Options</button>
+          <button id="logoutBtn" class="ghost">Log out</button>
+        </div>
+      </header>
+
+      <div class="options-panel" id="optionsPanel" hidden>
+        <div class="options-header">
+          <h3>Options</h3>
+          <button id="closeOptionsBtn" class="ghost" aria-label="Close options">×</button>
+        </div>
+        <div class="options-body">
+          <label class="theme-label" for="themeSelect">Theme</label>
+          <select id="themeSelect" aria-label="Select theme">
+            <option value="dark">Dark</option>
+            <option value="terminal">Terminal</option>
+            <option value="cmd">CMD</option>
+          </select>
+          <button id="viewEulaBtn" class="ghost" hidden>View EULA</button>
+          <button id="resetPasswordBtn" class="ghost" hidden>Reset Password</button>
+          <button id="resetDefaultsBtn" class="ghost" hidden>Reset to Defaults</button>
+        </div>
+      </div>
+
+      <main class="main-grid">
+        <section class="panel auth-panel" id="authPanel">
+          <h2>Secure Access</h2>
+          <p class="muted">
+            Sign in to manage models, switch skins, and access offline resources.
+          </p>
+          <form id="loginForm">
+            <label>
+              Username
+              <input type="text" name="username" placeholder="Operator" required />
+            </label>
+            <label>
+              Password
+              <input type="password" name="password" placeholder="••••••••" required />
+            </label>
+            <section id="eulaGate" class="eula-gate" hidden>
+              <h3>End User License Agreement</h3>
+              <pre id="eulaContent" class="eula-content">Loading EULA...</pre>
+              <label class="eula-check">
+                <input type="checkbox" id="eulaCheckbox" name="accept_eula" />
+                I have read and agree to the End User License Agreement.
+              </label>
+            </section>
+            <button type="submit" class="primary">Sign in</button>
+          </form>
+          <p class="muted small">
+            This prototype uses a local-only session. Default credentials should be
+            updated immediately after first login.
+          </p>
+          <p class="muted small">
+            Default login: <strong>llminabox</strong> / <strong>myllm</strong>
+          </p>
+        </section>
+
+        <section class="panel password-panel" id="passwordPanel" hidden>
+          <div class="panel-header">
+            <h2>Update Default Password</h2>
+            <span class="badge">Required</span>
+          </div>
+          <p class="muted">
+            For security, please replace the default password before continuing.
+          </p>
+          <form id="passwordForm">
+            <label>
+              New Password
+              <input
+                type="password"
+                name="new_password"
+                placeholder="Create a new password"
+                required
+              />
+            </label>
+            <button type="submit" class="primary">Save Password</button>
+          </form>
+        </section>
+
+        <section class="panel" id="dashboardPanel" hidden>
+          <div class="panel-header">
+            <h2>Model Manager</h2>
+            <button class="ghost" id="refreshBtn">Refresh</button>
+          </div>
+          <p class="muted small" id="modelStatus">Loading model catalog...</p>
+          <div class="model-grid" id="modelGrid"></div>
+        </section>
+
+        <section class="panel" id="chatPanel" hidden>
+          <div class="panel-header">
+            <h2>Chat Console</h2>
+            <div class="panel-header-actions">
+              <button class="ghost" id="newChatBtn" title="Start new chat">🔄 New Chat</button>
+              <button class="ghost" id="saveChatBtn" title="Save chat">💾 Save</button>
+              <span class="badge">Local Only</span>
+              <button class="ghost expand-btn" id="expandChatBtn" title="Expand chat">⛶</button>
+            </div>
+          </div>
+          <div class="chat-window" id="chatWindow">
+            <div class="chat-bubble assistant">
+              <strong>System</strong>
+              <p>Welcome back. Select a model, then ask a question.</p>
+            </div>
+          </div>
+          <form class="chat-input" id="chatForm">
+            <input
+              type="text"
+              name="message"
+              placeholder="Ask about water purification, shelter, or resource planning..."
+              required
+            />
+            <button type="submit" class="primary keep-black">Send</button>
+          </form>
+        </section>
+
+        <section class="panel" id="libraryPanel" hidden>
+          <div class="panel-header">
+            <h2>Offline Library</h2>
+            <div class="panel-header-actions">
+              <select id="libraryTypeSelect" class="library-type-select">
+                <option value="guides">Survival Guides</option>
+                <option value="chats">Saved Chats</option>
+                <option value="personal">Upload Personal Files</option>
+                <option value="server-log">Server Log</option>
+              </select>
+              <button class="ghost" id="openLibraryBtn">View Folder</button>
+              <button class="ghost expand-btn" id="expandLibraryBtn" title="Expand library">⛶</button>
+            </div>
+          </div>
+          <div class="library-body">
+            <div class="library-index">
+              <p class="muted small" id="libraryLocationLabel">
+                <strong>Guides location:</strong> <code>Survival Guides</code> folder on this drive
+              </p>
+              <p class="muted small" id="libraryHelpNote" hidden>
+                To view files or delete them, use your operating system file browser (e.g., Windows Explorer or Finder).
+              </p>
+              <div id="uploadControls" class="upload-controls" hidden>
+                <p class="muted small" id="storageInfo">Loading storage info...</p>
+                <div class="upload-form">
+                  <button class="primary" id="uploadBtn">📤 Upload</button>
+                  <input type="file" id="fileInput" class="file-input" hidden />
+                  <p class="muted small" id="fileNameDisplay">No file chosen</p>
+                </div>
+              </div>
+              <p class="muted small" id="libraryStatus">
+                Select "View Folder" to load available guides.
+              </p>
+              <ul class="resource-list" id="libraryList"></ul>
+            </div>
+            <div class="library-reader" id="libraryReader">
+              <h4 id="libraryTitle">Select a guide to view</h4>
+              <pre class="library-content" id="libraryContent"></pre>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>

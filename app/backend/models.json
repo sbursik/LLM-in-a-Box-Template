@@ -1,0 +1,47 @@
+{
+  "models": [
+    {
+      "id": "low-end-scout",
+      "name": "Low-End Scout",
+      "profile": "CPU-only · 4-8GB RAM · Phi-3 Mini Q4",
+      "status": "available",
+      "engine": "local",
+      "runtime": "llamacpp",
+      "artifact": "app/backend/runtimes/models/Phi-3-mini-4k-instruct-gguf/Phi-3-mini-4k-instruct-q4.gguf",
+      "prompt_template": "chatml",
+      "n_predict": 512,
+      "temperature": 0.7,
+      "timeout": 60,
+      "stop_sequences": ["<|im_end|>", "<|end|>"]
+    },
+    {
+      "id": "field-general",
+      "name": "Field General",
+      "profile": "Balanced · 8-16GB RAM · dolphin-llama3 8B Q3",
+      "status": "available",
+      "engine": "local",
+      "runtime": "llamacpp",
+      "artifact": "app/backend/runtimes/models/dolphin-2.9-llama3-8b-GGUF/dolphin-2.9-llama3-8b-Q3_K_L.gguf",
+      "prompt_template": "llama3",
+      "n_predict": 512,
+      "temperature": 0.7,
+      "timeout": 90,
+      "stop_sequences": ["<|eot_id|>", "<|end_of_text|>"],
+      "default": true
+    },
+    {
+      "id": "survival-expert",
+      "name": "Survival Expert",
+      "profile": "Survival specialist",
+      "status": "available",
+      "engine": "local",
+      "runtime": "llamacpp",
+      "artifact": "app/backend/runtimes/models/ALIENTELLIGENCE/survival.gguf",
+      "prompt_template": "chatml",
+      "n_predict": 512,
+      "temperature": 0.7,
+      "timeout": 90,
+      "stop_sequences": ["<|im_end|>", "<|end|>"]
+    }
+  ]
+}

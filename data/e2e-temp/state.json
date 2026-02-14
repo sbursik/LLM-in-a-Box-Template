@@ -1,0 +1,10 @@
+{
+  "eula_accepted": true,
+  "loaded_models": [],
+  "must_change_password": {
+    "llminabox": true
+  },
+  "users": {
+    "llminabox": "pbkdf2$120000$4334b4b7c8d052554d75804994f51eaa$2062c3b1f083ab8379bc08bac34ce6e352312901946fdf991b310cc9d394e748"
+  }
+}

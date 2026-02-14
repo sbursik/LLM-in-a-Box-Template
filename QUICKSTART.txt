@@ -1,0 +1,41 @@
+LEGAL NOTICE: Use of this software is subject to the End User License Agreement in EULA.txt. By installing or using this software, you agree to that EULA.
+
+To start on Windows, double-click WINDOWS-start_server.bat
+When the command window opens copy and paste the displayed URL into your web browser and hit enter to load
+
+To start on MacOS, double-click START-HERE.command from Finder. The web browser should launch to LLMinaBox. If the web browser doesn't auto launch, copy the URL and port link and paste it into your web browser to launch
+
+To start on Linux, run the MACOS-LINUX-start_server.sh script from a command prompt. The web browser should launch to LLMinaBox. If the web browser doesn't auto launch, copy the URL and port link and paste it into your web browser to launch
+
+Default login and password is on the main page at the bottom. You will be prompted to change your password the 1st time you login
+
+If you get a popup to allow Python, choose yes or this product will not run
+
+See the README.md file for complete notes
+
+NOTE: depending on your hardware, RAM, CPU and GPU your LLM and prompts may take some time to load. If you have a lower end machine, use the 1st or 2ns model in the UI. Be patient especiall on initial load of the LLM and your 1st question. After that it will run faster.
+
+For support go to https://myllminabox.com
+
+## Windows
+1. Double-click `WINDOWS-start_server.bat`.
+2. A server window opens and the browser should launch.
+3. Log in at the local URL shown in the server window.
+
+## macOS
+1. Double-click `START-HERE.command` from Finder.
+2. The browser should launch to the local URL.
+3. Note: First time only, you may need to make it executable:
+   `chmod +x START-HERE.command MACOS-LINUX-start_server.sh`
+
+## Linux
+1. Open Terminal and go to the USB root folder.
+2. Make the script executable (first run only):
+   `chmod +x MACOS-LINUX-start_server.sh`
+3. Run the server:
+   `./MACOS-LINUX-start_server.sh`
+4. The browser should launch to the local URL.
+
+## Optional flags
+- Fixed port: `python app/launcher/launch.py --port 8000`
+- No browser auto-open: `python app/launcher/launch.py --no-browser`

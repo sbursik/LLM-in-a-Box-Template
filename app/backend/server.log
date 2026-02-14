@@ -1,0 +1,107 @@
+2026-02-12 15:39:07,683 [INFO] __main__: 
+############################################################
+#                                                          #
+#                   LLM-in-a-Box is READY!                 #
+#                   http://127.0.0.1:53605                 #
+#                                                          #
+############################################################
+
+2026-02-12 15:46:59,951 [INFO] __main__: 
+############################################################
+#                                                          #
+#                   LLM-in-a-Box is READY!                 #
+#                   http://127.0.0.1:56701                 #
+#                                                          #
+############################################################
+
+2026-02-12 15:47:30,238 [INFO] __main__: File saved successfully: C:\Users\scott\Documents\GitHub\LLM-in-a-Box\Personal Files\Ultimate Survival Guide.txt
+2026-02-12 15:49:46,716 [INFO] engine: Loading model survival-expert with runtime llamacpp...
+2026-02-12 15:49:46,775 [INFO] engine: llama.cpp server selected (build match llama-b7999-bin-win-cpu-x64): C:\Users\scott\Documents\GitHub\LLM-in-a-Box\app\backend\runtimes\llama.cpp\llama-b7999-bin-win-cpu-x64\llama-server.exe
+2026-02-12 15:49:47,281 [INFO] engine: Model survival-expert loaded successfully
+2026-02-12 15:53:07,179 [INFO] __main__: ============================================================
+2026-02-12 15:53:07,179 [INFO] __main__: Reloading 1 model(s) from previous session...
+2026-02-12 15:53:07,180 [INFO] __main__: ============================================================
+2026-02-12 15:53:07,180 [INFO] __main__: Loading Survival Expert...
+2026-02-12 15:53:07,180 [INFO] engine: Loading model survival-expert with runtime llamacpp...
+2026-02-12 15:53:07,251 [INFO] engine: llama.cpp server selected (build match llama-b7999-bin-win-cpu-x64): C:\Users\scott\Documents\GitHub\LLM-in-a-Box\app\backend\runtimes\llama.cpp\llama-b7999-bin-win-cpu-x64\llama-server.exe
+2026-02-12 15:53:07,756 [INFO] engine: Model survival-expert loaded successfully
+2026-02-12 15:53:07,756 [INFO] __main__: ✓ Survival Expert loaded successfully
+2026-02-12 15:53:07,757 [INFO] __main__: ============================================================
+2026-02-12 15:53:07,759 [INFO] __main__: 
+############################################################
+#                                                          #
+#                   LLM-in-a-Box is READY!                 #
+#                   http://127.0.0.1:50717                 #
+#                                                          #
+############################################################
+
+2026-02-12 15:53:07,759 [INFO] __main__: Models loaded: survival-expert
+2026-02-12 15:53:52,237 [INFO] engine: Loading model low-end-scout with runtime llamacpp...
+2026-02-12 15:53:52,237 [INFO] engine: llama.cpp server selected (build match llama-b7999-bin-win-cpu-x64): C:\Users\scott\Documents\GitHub\LLM-in-a-Box\app\backend\runtimes\llama.cpp\llama-b7999-bin-win-cpu-x64\llama-server.exe
+2026-02-12 15:53:52,743 [INFO] engine: Model low-end-scout loaded successfully
+2026-02-12 15:54:10,967 [INFO] engine: Loading model survival-expert with runtime llamacpp...
+2026-02-12 15:54:10,968 [INFO] engine: llama.cpp server selected (build match llama-b7999-bin-win-cpu-x64): C:\Users\scott\Documents\GitHub\LLM-in-a-Box\app\backend\runtimes\llama.cpp\llama-b7999-bin-win-cpu-x64\llama-server.exe
+2026-02-12 15:54:11,473 [INFO] engine: Model survival-expert loaded successfully
+2026-02-13 08:13:31,654 [INFO] __main__: 
+############################################################
+#                                                          #
+#                   LLM-in-a-Box is READY!                 #
+#                   http://127.0.0.1:54601                 #
+#                                                          #
+############################################################
+
+2026-02-13 08:14:03,633 [INFO] engine: Loading model low-end-scout with runtime llamacpp...
+2026-02-13 08:14:03,716 [INFO] engine: llama.cpp server selected (build match llama-b7999-bin-win-cpu-x64): C:\Users\scott\Documents\GitHub\LLM-in-a-Box\app\backend\runtimes\llama.cpp\llama-b7999-bin-win-cpu-x64\llama-server.exe
+2026-02-13 08:14:04,247 [INFO] engine: Model low-end-scout loaded successfully
+2026-02-13 09:28:12,115 [INFO] __main__: ============================================================
+2026-02-13 09:28:12,115 [INFO] __main__: Reloading 1 model(s) from previous session...
+2026-02-13 09:28:12,115 [INFO] __main__: ============================================================
+2026-02-13 09:28:12,115 [INFO] __main__: Loading Low-End Scout...
+2026-02-13 09:28:12,115 [INFO] engine: Loading model low-end-scout with runtime llamacpp...
+2026-02-13 09:28:12,157 [INFO] engine: llama.cpp server selected (build match llama-b7999-bin-win-cpu-x64): C:\Users\scott\Documents\GitHub\LLM-in-a-Box\app\backend\runtimes\llama.cpp\llama-b7999-bin-win-cpu-x64\llama-server.exe
+2026-02-13 09:28:12,692 [INFO] engine: Model low-end-scout loaded successfully
+2026-02-13 09:28:12,692 [INFO] __main__: ✓ Low-End Scout loaded successfully
+2026-02-13 09:28:12,693 [INFO] __main__: ============================================================
+2026-02-13 09:28:12,695 [INFO] __main__: 
+############################################################
+#                                                          #
+#                   LLM-in-a-Box is READY!                 #
+#                   http://127.0.0.1:8091                  #
+#                                                          #
+############################################################
+
+2026-02-13 09:28:12,695 [INFO] __main__: Models loaded: low-end-scout
+2026-02-13 09:29:35,352 [INFO] __main__: 
+############################################################
+#                                                          #
+#                   LLM-in-a-Box is READY!                 #
+#                   http://127.0.0.1:8092                  #
+#                                                          #
+############################################################
+
+2026-02-13 09:30:07,376 [INFO] __main__: 
+############################################################
+#                                                          #
+#                   LLM-in-a-Box is READY!                 #
+#                   http://127.0.0.1:8093                  #
+#                                                          #
+############################################################
+
+2026-02-13 09:31:19,434 [INFO] __main__: ============================================================
+2026-02-13 09:31:19,434 [INFO] __main__: Reloading 1 model(s) from previous session...
+2026-02-13 09:31:19,434 [INFO] __main__: ============================================================
+2026-02-13 09:31:19,435 [INFO] __main__: Loading Low-End Scout...
+2026-02-13 09:31:19,435 [INFO] engine: Loading model low-end-scout with runtime llamacpp...
+2026-02-13 09:31:19,485 [INFO] engine: llama.cpp server selected (build match llama-b7999-bin-win-cpu-x64): C:\Users\scott\Documents\GitHub\LLM-in-a-Box\app\backend\runtimes\llama.cpp\llama-b7999-bin-win-cpu-x64\llama-server.exe
+2026-02-13 09:31:19,989 [INFO] engine: Model low-end-scout loaded successfully
+2026-02-13 09:31:19,989 [INFO] __main__: ✓ Low-End Scout loaded successfully
+2026-02-13 09:31:19,990 [INFO] __main__: ============================================================
+2026-02-13 09:31:19,992 [INFO] __main__: 
+############################################################
+#                                                          #
+#                   LLM-in-a-Box is READY!                 #
+#                   http://127.0.0.1:54957                 #
+#                                                          #
+############################################################
+
+2026-02-13 09:31:19,993 [INFO] __main__: Models loaded: low-end-scout
